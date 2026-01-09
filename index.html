@@ -12,22 +12,20 @@
     background: #0f172a;
   }
 
-  /* This is the "container" for the image + hotspots */
+  /* Container for image + hotspots */
   .page {
     position: relative;
     width: 100%;
-    max-width: 1200px;   /* optional: keeps it readable on huge monitors */
-    margin: 0 auto;      /* centers it */
   }
 
-  /* Image scales naturally and keeps aspect ratio */
+  /* Image fills full browser width, keeps aspect ratio */
   .page img {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  /* Hotspots overlay the image */
+  /* Clickable overlays */
   .hotspot {
     position: absolute;
     display: block;
@@ -45,6 +43,7 @@
 <body>
 
 <div class="page">
+  <!-- Background image -->
   <img src="lendbuzz-training-home.png" alt="Lendbuzz Training Home">
 
   <!-- DEALER SIGN-UP BUTTON (footer) -->
@@ -54,27 +53,3 @@
     rel="noopener"
     class="hotspot"
     style="
-      left: 63%;
-      top: 82%;
-      width: 10%;
-      height: 3%;
-    "
-  ></a>
-
-  <!-- MY ACCOUNT BUTTON (top right) -->
-  <a
-    href="https://client-web-app.training1.ecs.lendbuzz.io/login?loginType=email"
-    target="_blank"
-    rel="noopener"
-    class="hotspot"
-    style="
-      left: 78%;
-      top: 3.8%;
-      width: 7%;
-      height: 3%;
-    "
-  ></a>
-</div>
-
-</body>
-</html>
