@@ -15,21 +15,20 @@
   }
 
   .page {
-    position: relative;
-    width: 1200px; /* match your exported image width */
-    max-width: 100%;
-  }
+  position: relative;
+  width: min(1200px, 100vw);
+}
 
-  .page img {
-    width: 100%;
-    display: block;
-  }
+.page img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  /* Invisible clickable areas */
-  .hotspot {
-    position: absolute;
-    cursor: pointer;
-  }
+.hotspot {
+  position: absolute;
+}
+
 
   /* Optional: show during testing */
   .hotspot.debug {
@@ -51,25 +50,26 @@
   target="_blank"
   class="hotspot debug"
   style="
-    left: 60%;
-    top: 87%;
-    width: 15%;
-    height: 3.2%;
+    left: 60.8%;
+    top: 88.9%;
+    width: 4.3%;
+    height: 1.2%;
   "
 ></a>
 
+
   <!-- MY ACCOUNT BUTTON (top right) -->
   <a
-    href="https://client-web-app.training1.ecs.lendbuzz.io/login?loginType=email"
-    target="_blank"
-    class="hotspot"
-    style="
-      top: 35px;
-      right: 110px;
-      width: 120px;
-      height: 34px;
-    "
-  ></a>
+  href="https://client-web-app.training1.ecs.lendbuzz.io/login?loginType=email"
+  target="_blank"
+  class="hotspot"
+  style="
+    left: 84.8%;
+    top: 2.9%;
+    width: 2.7%;
+    height: 1.0%;
+  "
+></a>
 
 </div>
 
