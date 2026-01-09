@@ -9,30 +9,32 @@
 <style>
   body {
     margin: 0;
-    background: #000;
+    background: #0f172a;
   }
 
+  /* This is the "container" for the image + hotspots */
   .page {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;   /* optional: keeps it readable on huge monitors */
+    margin: 0 auto;      /* centers it */
   }
 
+  /* Image scales naturally and keeps aspect ratio */
   .page img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
   }
 
+  /* Hotspots overlay the image */
   .hotspot {
     position: absolute;
     display: block;
     cursor: pointer;
   }
 
-  /* Debug helper — remove "debug" class when done */
+  /* Debug helper (optional) */
   .hotspot.debug {
     outline: 2px dashed rgba(0,255,0,.7);
     background: rgba(0,255,0,.2);
@@ -43,7 +45,6 @@
 <body>
 
 <div class="page">
-  <!-- Background image -->
   <img src="lendbuzz-training-home.png" alt="Lendbuzz Training Home">
 
   <!-- DEALER SIGN-UP BUTTON (footer) -->
@@ -73,7 +74,6 @@
       height: 3%;
     "
   ></a>
-
 </div>
 
 </body>
